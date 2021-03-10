@@ -79,7 +79,7 @@ import {AppHelpComponent} from './pages/app.help.component';
             {path: 'notfound', component: AppNotfoundComponent},
             {path: 'login', component: AppLoginComponent},
             {path: '**', redirectTo: '/notfound'},
-        ], {scrollPositionRestoration: 'enabled'})
+        ], { scrollPositionRestoration: 'enabled', relativeLinkResolution: 'legacy' })
     ],
     exports: [RouterModule]
 })
